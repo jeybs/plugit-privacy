@@ -8,19 +8,21 @@
 
   <meta
     name="description"
-    content="Contact PlugIt Support."
+    content="Support page for PlugIt."
   />
 
   <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      box-sizing: border-box;
-
+      padding: 0;
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -29,42 +31,81 @@
         Helvetica,
         Arial,
         sans-serif;
-
+      line-height: 1.7;
       background: #f7f7f9;
       color: #1d1d1f;
-      text-align: center;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 24px;
     }
 
     .card {
-      width: 100%;
-      max-width: 480px;
-      padding: 40px;
-      border-radius: 20px;
       background: #ffffff;
+      border-radius: 20px;
+      padding: 48px;
       box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
     }
 
     h1 {
       margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-top: 36px;
       margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      font-size: 17px;
     }
 
     p {
-      color: #6e6e73;
-      line-height: 1.6;
+      font-size: 16px;
     }
 
-    a.button {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 14px 24px;
+    .subtitle {
+      color: #6e6e73;
+      margin-bottom: 32px;
+    }
 
+    .faq {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e5e7;
+    }
+
+    .faq:last-child {
+      border-bottom: none;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      border-radius: 12px;
       background: #007aff;
       color: #ffffff;
-
       text-decoration: none;
-      border-radius: 12px;
       font-weight: 600;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5e7;
+      color: #6e6e73;
+      font-size: 14px;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -75,40 +116,176 @@
 
       .card {
         background: #1c1c1e;
+        box-shadow: none;
       }
 
-      p {
+      .subtitle,
+      footer {
         color: #a1a1a6;
+      }
+
+      .faq,
+      footer {
+        border-color: #38383a;
+      }
+
+      a {
+        color: #2997ff;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 16px;
+      }
+
+      .card {
+        padding: 28px 22px;
+        border-radius: 16px;
+      }
+
+      h1 {
+        font-size: 32px;
       }
     }
   </style>
-
-  <script>
-    window.onload = function () {
-      window.location.href =
-        "mailto:support@yourdomain.com?subject=PlugIt%20Support";
-    };
-  </script>
 </head>
 
 <body>
-  <main class="card">
-    <h1>PlugIt Support</h1>
+  <main class="container">
+    <article class="card">
 
-    <p>
-      Your email application should open automatically.
-    </p>
+      <h1>PlugIt Support</h1>
 
-    <p>
-      If it doesn't, click the button below.
-    </p>
+      <p class="subtitle">
+        Need help with PlugIt? You can find answers to common questions
+        below or contact us directly.
+      </p>
 
-    <a
-      class="button"
-      href="mailto:jbstreaming02@gmail.com?subject=PlugIt%20Support"
-    >
-      Contact Support
-    </a>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <h3>What is PlugIt?</h3>
+
+        <p>
+          PlugIt is a macOS app that reacts to supported power and device
+          events with customizable sounds and experiences.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>Why isn't a sound playing?</h3>
+
+        <p>
+          Make sure the reaction is enabled inside PlugIt and that your
+          Mac's volume is turned up. You can also try selecting a different
+          sound and triggering the event again.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>Do I need an account?</h3>
+
+        <p>
+          No. PlugIt does not require you to create an account to use
+          the app.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>Can I use PlugIt on another Mac?</h3>
+
+        <p>
+          If you purchased PlugIt Pro using your Apple Account, you can
+          download PlugIt on another compatible Mac using the same
+          Apple Account and restore your purchase when needed.
+        </p>
+      </div>
+
+      <h2>Restore Purchases</h2>
+
+      <p>
+        If you previously purchased PlugIt Pro but the app is not
+        recognizing your purchase:
+      </p>
+
+      <ol>
+        <li>
+          Make sure you are signed in to the Mac App Store using the
+          same Apple Account that was used for the original purchase.
+        </li>
+
+        <li>
+          Open PlugIt.
+        </li>
+
+        <li>
+          Open the PlugIt Pro or purchase screen.
+        </li>
+
+        <li>
+          Click <strong>Restore Purchases</strong>.
+        </li>
+      </ol>
+
+      <p>
+        Your purchase will be checked through Apple's App Store services.
+        You will not be charged again for restoring an existing purchase.
+      </p>
+
+      <h2>Report an Issue</h2>
+
+      <p>
+        If you encounter a problem, please include as much information
+        as possible when contacting support, such as:
+      </p>
+
+      <ul>
+        <li>Your macOS version</li>
+        <li>Your Mac model, if relevant</li>
+        <li>What you were doing when the issue occurred</li>
+        <li>What you expected to happen</li>
+        <li>What actually happened</li>
+        <li>Screenshots, if applicable</li>
+      </ul>
+
+      <a
+        class="button"
+        href="mailto:YOUR_EMAIL@example.com?subject=PlugIt%20Support%20Request"
+      >
+        Email PlugIt Support
+      </a>
+
+      <h2>Support Email</h2>
+
+      <p>
+        You can contact PlugIt support at:
+      </p>
+
+      <p>
+        <a href="mailto:jbstreaming02@gmail.com">
+          jbstreaming02@gmail.com
+        </a>
+      </p>
+
+      <h2>Privacy</h2>
+
+      <p>
+        Learn more about how PlugIt handles your information in our
+        Privacy Policy.
+      </p>
+
+      <p>
+        <a href="./index.html">
+          View PlugIt Privacy Policy
+        </a>
+      </p>
+
+      <footer>
+        &copy; 2026 PlugIt / J-Labs Tech. All rights reserved.
+      </footer>
+
+    </article>
   </main>
 </body>
 </html>
